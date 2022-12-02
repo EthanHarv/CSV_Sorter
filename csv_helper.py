@@ -53,7 +53,7 @@ def sort_csv(rows: list[list[str]]) -> list[list[str]]:
 
     # Sort by first column
     try:
-        sorted_rows = sorted(rows, key = lambda row: int(row[0]))
+        sorted_rows = sorted(rows, key = lambda row: float(row[0]))
     except ValueError as err:
         raise err
 
